@@ -1,5 +1,6 @@
 package com.sqisland.intent.incoming;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -26,6 +27,12 @@ public class CountCharacterActivity extends AppCompatActivity {
         count(text);
       }
     });
+
+    String text = getIntent().getStringExtra(Intent.EXTRA_TEXT);
+    if (text != null) {
+      textView.setText(text);
+      count(text);
+    }
   }
 
   private void count(CharSequence text) {

@@ -7,6 +7,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class CelsiusToFahrenheitActivity extends AppCompatActivity {
+  private static final String EXTRA_CELSIUS = "Celsius";
+
   private EditText celsuisView;
   private TextView messageView;
 
@@ -31,6 +33,12 @@ public class CelsiusToFahrenheitActivity extends AppCompatActivity {
         }
       }
     });
+
+    if (getIntent().hasExtra(EXTRA_CELSIUS)) {
+      float celsius = getIntent().getFloatExtra(EXTRA_CELSIUS, 0);
+      celsuisView.setText(String.valueOf(celsius));
+      convert(celsius);
+    }
   }
 
   private void convert(float celsius) {

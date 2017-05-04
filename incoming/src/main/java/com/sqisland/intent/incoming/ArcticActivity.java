@@ -1,5 +1,6 @@
 package com.sqisland.intent.incoming;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -26,6 +27,16 @@ public class ArcticActivity extends AppCompatActivity {
         check(text);
       }
     });
+
+    Uri uri = getIntent().getData();
+    if (uri != null && uri.getSchemeSpecificPart() != null) {
+      String[] parts = uri.getSchemeSpecificPart().split(",");
+      if (parts.length == 2) {
+        String latitude = parts[0];
+        latitudeView.setText(latitude);
+        check(latitude);
+      }
+    }
   }
 
   private void check(String text) {

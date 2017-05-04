@@ -13,15 +13,40 @@
         <action android:name="android.intent.action.MAIN"/>
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:scheme="https"/>
+        <data android:host="example.com"/>
+        <data android:pathPrefix="/testing"/>
+      </intent-filter>
     </activity>
     <activity
         android:name=".ArcticActivity"
-        android:label="@string/title_arctic"/>
+        android:label="@string/title_arctic">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:scheme="geo"/>
+      </intent-filter>
+    </activity>
     <activity
         android:name=".CountCharacterActivity"
-        android:label="@string/title_count_character"/>
+        android:label="@string/title_count_character">
+      <intent-filter>
+        <action android:name="android.intent.action.SEND"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:mimeType="text/*"/>
+      </intent-filter>
+    </activity>
     <activity
         android:name=".CelsiusToFahrenheitActivity"
-        android:label="@string/title_celcius_to_fahrenheit"/>
+        android:label="@string/title_celcius_to_fahrenheit">
+      <intent-filter>
+        <action android:name="com.sqisland.intent.incoming.CELSIUS_TO_FAHRENHEIT"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
   </application>
 </manifest>
