@@ -28,7 +28,7 @@ public class CountCharacterActivity extends AppCompatActivity {
       }
     });
 
-    String text = getIntent().getStringExtra(Intent.EXTRA_TEXT);
+    CharSequence text = getIntent().getCharSequenceExtra(Intent.EXTRA_TEXT);
     if (text != null) {
       textView.setText(text);
       count(text);
