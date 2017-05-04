@@ -1,0 +1,32 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="4dp"
+      android:text="@string/title_arctic"
+      android:onClick="checkArctic"/>
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="4dp"
+      android:text="@string/title_count_character"
+      android:onClick="countCharacters"/>
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="4dp"
+      android:text="@string/title_celcius_to_fahrenheit"
+      android:onClick="convertTemperature"/>
+  <TextView
+      android:id="@+id/uri"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="4dp"/>
+</LinearLayout>

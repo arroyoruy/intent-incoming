@@ -1,0 +1,19 @@
+<resources>
+  <string name="app_name">Incoming Intents</string>
+
+  <string name="title_arctic">Check Arctic</string>
+  <string name="hint_latitude">Latitude</string>
+  <string name="check">Check</string>
+  <string name="invalid_latitude">Invalid latitude</string>
+  <string name="inside_arctic_circle">It is inside the Arctic Circle</string>
+  <string name="outside_arctic_circle">It is outside the Arctic Circle</string>
+
+  <string name="title_count_character">Count Characters</string>
+  <string name="count">Count</string>
+
+  <string name="title_celcius_to_fahrenheit">Convert &#176;C to &#176;F</string>
+  <string name="hint_celcius">&#176;C</string>
+  <string name="convert">Convert</string>
+  <string name="invalid_temperature">Invalid temperature</string>
+  <string name="fahrenheit">%1$.2f &#176;F</string>
+</resources>

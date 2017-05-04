@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">Outgoing Intents</string>
+  <string name="title_arctic">Is Hong Kong arctic?</string>
+  <string name="title_count_character">Count Characters</string>
+  <string name="title_convert_temperature">Convert 100 &#176;C to &#176;F</string>
+  <string name="text_to_share">Sharing is caring</string>
+</resources>
